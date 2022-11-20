@@ -1,5 +1,8 @@
 declare const ReactTagManager: {
-    init: (GTMCode: string) => void;
+    init: ({ code, debug }: {
+        code: string;
+        debug?: boolean | undefined;
+    }) => void;
     action: ({ event, ...more }: {
         [key: string]: string;
         event: string;

@@ -24,7 +24,10 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-ReactTagManager.init('GTM-NGV448C');
+ReactTagManager.init({
+  code: 'GTM-XXXX', // GTM Code
+  debug: false, // debug mode (default false)
+});
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   return <Component {...pageProps} />;
