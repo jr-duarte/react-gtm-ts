@@ -1,12 +1,9 @@
-type GTMInitProps = {
-    GTMCode: string;
+declare const ReactTagManager: {
+    init: (GTMCode: string) => void;
+    action: ({ event, ...more }: {
+        [key: string]: string;
+        event: string;
+    }) => void;
 };
-declare const GTMInit: ({ GTMCode }: GTMInitProps) => void;
 
-type GTMActionProps = {
-    event: string;
-    [key: string]: string;
-};
-declare const GTMAction: ({ event, ...more }: GTMActionProps) => void;
-
-export { GTMAction, GTMInit };
+export { ReactTagManager };

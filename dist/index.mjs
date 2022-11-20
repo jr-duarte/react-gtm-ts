@@ -1,5 +1,5 @@
 // src/features/init/index.ts
-var GTMInit = ({ GTMCode }) => {
+var init = (GTMCode) => {
   if (typeof window === "undefined")
     return;
   const elScript = document.createElement("script");
@@ -13,7 +13,7 @@ var GTMInit = ({ GTMCode }) => {
 };
 
 // src/features/action/index.ts
-var GTMAction = ({ event, ...more }) => {
+var action = ({ event, ...more }) => {
   if (typeof window === "undefined")
     return;
   window.dataLayer.push({
@@ -21,7 +21,12 @@ var GTMAction = ({ event, ...more }) => {
     ...more
   });
 };
+
+// src/features/index.ts
+var ReactTagManager = {
+  init,
+  action
+};
 export {
-  GTMAction,
-  GTMInit
+  ReactTagManager
 };
