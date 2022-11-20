@@ -29,6 +29,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return <Component {...pageProps} />;
 }
+
 export default MyApp;
 ```
 
