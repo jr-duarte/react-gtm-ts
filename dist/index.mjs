@@ -16,6 +16,8 @@ var init = (GTMCode) => {
 var action = ({ event, ...more }) => {
   if (typeof window === "undefined")
     return;
+  if (typeof window.dataLayer.push === "undefined")
+    return;
   window.dataLayer.push({
     event,
     ...more
