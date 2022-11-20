@@ -1,6 +1,6 @@
-type GTMActionProps = { event: string; [key: string]: string };
+type TActionProps = { event: string; [key: string]: string };
 
-export const GTMAction = ({ event, ...more }: GTMActionProps) => {
+export const action = ({ event, ...more }: TActionProps) => {
   if (typeof window === 'undefined') return;
 
   window.dataLayer.push({

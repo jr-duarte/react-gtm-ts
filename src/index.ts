@@ -1,2 +1,1 @@
-export { GTMInit } from './features/init';
-export { GTMAction } from './features/action';
+export { ReactTagManager } from './features';

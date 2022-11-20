@@ -1,6 +1,4 @@
-type GTMInitProps = { GTMCode: string };
-
-export const GTMInit = ({ GTMCode }: GTMInitProps) => {
+export const init = (GTMCode: string) => {
   if (typeof window === 'undefined') return;
 
   const elScript = document.createElement('script');
