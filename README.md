@@ -14,7 +14,7 @@ yarn add react-gtm-ts
 
 Add ReactTagManager.init passing GTM code in app or \_app (nextjs):
 
-```sh
+```ts
 import { ReactTagManager } from 'react-gtm-ts';
 
 import { NextPageWithLayout } from '@Core/types/next';
@@ -34,7 +34,7 @@ export default MyApp;
 
 Now just use the ReactTagManager.action for the actions passing the event and the variables (optional)
 
-```sh
+```ts
 import { ReactTagManager } from 'react-gtm-ts';
 
 import { NextPageWithLayout } from '@Core/types/next';

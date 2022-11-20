@@ -1,15 +1,27 @@
 {
   "name": "react-gtm-ts",
   "author": "Junior Duarte",
-  "license": "ISC",
-  "version": "1.0.13",
+  "license": "MIT",
+  "version": "1.0.14",
+  "description": "This is a library to facilitate the implementation of Google Tag Manager.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jr-duarte/react-gtm-ts"
+  },
+  "keywords": [
+    "Google Tag Manager",
+    "GTM",
+    "react",
+    "next",
+    "ts",
+    "typescript"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
