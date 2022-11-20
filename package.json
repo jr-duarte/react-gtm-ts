@@ -2,7 +2,7 @@
   "name": "react-gtm-ts",
   "author": "Junior Duarte",
   "license": "MIT",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "This is a library to facilitate the implementation of Google Tag Manager.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -23,8 +23,8 @@
     "typescript"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts --minify",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --minify --watch",
     "prepare": "husky install",
     "lint": "eslint ./",
     "lintFix": "eslint ./ --fix"
