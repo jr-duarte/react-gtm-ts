@@ -2,7 +2,7 @@
   "name": "react-gtm-ts",
   "author": "Junior Duarte",
   "license": "ISC",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
