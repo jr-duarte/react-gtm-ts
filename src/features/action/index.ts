@@ -1,4 +1,4 @@
-type TActionProps = { event: string; [key: string]: string };
+type TActionProps = { event: string; [key: string]: string | number };
 
 export const action = ({ event, ...more }: TActionProps) => {
   if (typeof window?.dataLayer?.push !== 'undefined') {
