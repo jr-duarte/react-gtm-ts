@@ -1,6 +1,16 @@
 type TInitProps = { code: string; debug?: boolean };
 
-export const init = ({ code, debug = false }: TInitProps) => {
+/**
+ * This is the function responsible for adding the necessary scripts for GTM.
+ *
+ * @param {string} code - A string param.
+ * @param  {boolean} [debug=false] - A boolean param.
+ * @return - void
+ *
+ * See more https://github.com/jr-duarte/react-gtm-ts
+ */
+
+export const init = ({ code, debug = false }: TInitProps): void => {
   if (typeof window === 'undefined') return;
 
   const elScript = document.createElement('script');

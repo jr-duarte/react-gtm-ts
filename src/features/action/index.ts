@@ -1,6 +1,15 @@
 type TActionProps = { event: string; [key: string]: string | number };
 
-export const action = ({ event, ...more }: TActionProps) => {
+/**
+ * This is the function responsible for triggering the event.
+ *
+ * @param {string} event - A string param.
+ * @param {Object.<string, string | number>} ...more - A object param [key: string]: string | number
+ * @returns void
+ * See more https://github.com/jr-duarte/react-gtm-ts
+ */
+
+export const action = ({ event, ...more }: TActionProps): void => {
   if (typeof window?.dataLayer?.push !== 'undefined') {
     window.dataLayer.push({
       event,
