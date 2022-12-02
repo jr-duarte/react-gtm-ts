@@ -6,6 +6,7 @@ type TActionProps = { event: string; [key: string]: string | number };
  * @param {string} event - A string param.
  * @param {Object.<string, string | number>} ...more - A object param [key: string]: string | number
  * @returns void
+ *
  * See more https://github.com/jr-duarte/react-gtm-ts
  */
 
