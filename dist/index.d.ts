@@ -4,7 +4,7 @@ declare const ReactTagManager: {
         debug?: boolean | undefined;
     }) => void;
     action: ({ event, ...more }: {
-        [key: string]: string | number;
+        [key: string]: any;
         event: string;
     }) => void;
 };

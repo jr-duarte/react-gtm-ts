@@ -1,10 +1,10 @@
-type TActionProps = { event: string; [key: string]: string | number };
+type TActionProps = { event: string; [key: string]: any };
 
 /**
  * This is the function responsible for triggering the event.
  *
  * @param {string} event - A string param.
- * @param {Object.<string, string | number>} ...more - A object param [key: string]: string | number
+ * @param {Object.<string, any>} ...more - A object param [key: string]: string | number
  * @returns void
  *
  * See more https://github.com/jr-duarte/react-gtm-ts
