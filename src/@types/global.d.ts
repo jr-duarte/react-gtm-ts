@@ -3,6 +3,8 @@ interface Window {
     push: (params: { event: string; [key: string]: string | number }) => void;
   };
   react_gtm_ts: {
-    debug: boolean;
+    init?: boolean;
+    debug?: boolean;
+    performance?: boolean;
   };
 }

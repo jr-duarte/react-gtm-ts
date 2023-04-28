@@ -1,4 +1,4 @@
-type TActionProps = { event: string; [key: string]: any };
+type TActionProps = { event: string; [key: string]: unknown };
 
 /**
  * This is the function responsible for triggering the event.

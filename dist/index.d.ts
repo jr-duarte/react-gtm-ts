@@ -1,10 +1,11 @@
 declare const ReactTagManager: {
-    init: ({ code, debug }: {
+    init: ({ code, debug, performance, }: {
         code: string;
         debug?: boolean | undefined;
+        performance?: boolean | undefined;
     }) => void;
     action: ({ event, ...more }: {
-        [key: string]: any;
+        [key: string]: unknown;
         event: string;
     }) => void;
 };
