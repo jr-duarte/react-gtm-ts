@@ -27,6 +27,7 @@ type AppPropsWithLayout = AppProps & {
 ReactTagManager.init({
   code: 'GTM-XXXX', // GTM Code
   debug: false, // debug mode (default false)
+  performance: false, // starts GTM only after user interaction (improve initial page load)
 });
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
