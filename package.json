@@ -2,7 +2,7 @@
   "name": "react-gtm-ts",
   "author": "Junior Duarte",
   "license": "MIT",
-  "version": "1.0.44",
+  "version": "1.0.45",
   "description": "This is a library to facilitate the implementation of Google Tag Manager.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
